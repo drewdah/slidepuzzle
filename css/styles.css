@@ -1,0 +1,166 @@
+/* YUI Reset */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+body
+{
+	-webkit-user-select:none;
+}
+
+/* Puzzle */
+#puzzle {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 648px;
+    height: 648px;
+    background-color: #fff;
+	
+	border: 10px solid #000;
+	
+	-webkit-border-radius: 10px;
+}
+
+#info {
+	display: none;
+	position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 648px;
+    height: 648px;
+    background-color: rgba(0,0,0,0.8);
+	z-index: 2;
+	text-align: center;
+}
+
+#info h1 {
+	position: relative;
+	top: 270px;
+	font-size: 36px;
+	color: #fff;
+}
+
+#info .restart {
+	position: relative;
+	display: inline;
+	
+	top: 300px;
+			
+	width: 100px;
+	
+	cursor: pointer;
+	
+	-webkit-border-radius: 5px;
+	
+	padding: 6px 12px;
+	line-height: 1em;
+	font-size: 16px;
+	font-weight: bold;
+
+	border: 1px solid #ddd;
+	color: #111;
+	background-color: white;
+
+	vertical-align: center;
+}
+
+#solve {
+	display: none;
+	position: absolute; 
+	top: 700px; 
+	left: 290px; 
+	height: 50px; 
+	width: 150px;
+}
+
+/* Tile */
+.tile {
+	z-index: 1;
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    background-image: url('../assets/lion.png');
+    opacity: 1;
+    color: #fff;
+    overflow: hidden;
+    font-size: 21px;
+    text-shadow: 1px 1px 1px black;
+    
+    text-indent: 10px;
+    line-height: 32px;
+    font-weight:  bold;
+	
+	border: 1px solid #333;
+		
+	-webkit-transform: translateZ(0);
+}
+
+.tile:hover {
+	cursor: pointer;
+
+    -webkit-box-shadow: inset 0px 0px 25px rgba(255,255,255,0.7);
+}
+
+/* Tile positions */
+.type0 {
+    background-position: 0px 0px;
+}
+
+.type1 {
+    background-position: -160px 0px;
+}
+
+.type2 {
+    background-position: -320px 0px;
+}
+
+.type3 {
+    background-position: -480px 0px;
+}
+
+.type4 {
+    background-position: 0px -160px;
+}
+
+.type5 {
+    background-position: -160px -160px;
+}
+
+.type6 {
+    background-position: -320px -160px;
+}
+
+.type7 {
+    background-position: -480px -160px;
+}
+
+.type8 {
+    background-position: 0px -320px;
+}
+
+.type9 {
+    background-position: -160px -320px;
+}
+
+.type10 {
+    background-position: -320px -320px;
+}
+
+.type11 {
+    background-position: -480px -320px;
+}
+
+.type12 {
+    background-position: 0px -480px;
+}
+
+.type13 {
+    background-position: -160px -480px;
+}
+
+.type14 {
+    background-position: -320px -480px;
+}
+
+.type15 {
+    background-position: -480px -480px;
+}
